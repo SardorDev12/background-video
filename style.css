@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: ease 0.3s;
+}
+
+.hide-preloader {
+  visibility: hide;
+  z-index: -999;
+}
+
 header {
   min-height: 100vh;
   display: grid;
